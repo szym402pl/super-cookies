@@ -1,0 +1,13 @@
+name: SuperCookiesBeta
+version: '1'
+main: me.xiaojibazhanshi.superCookiesBeta.SuperCookiesBeta
+api-version: '1.21'
+authors: [ SizeSMP ]
+description: A plugin which gives you SuperCookies!
+commands:
+  supercookie:
+    permission: supercookie.use
+    usage: /supercookie <cookie> <player*>  | * - not needed
+permissions:
+  supercookies.use:
+    default: op

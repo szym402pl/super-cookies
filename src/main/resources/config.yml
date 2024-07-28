@@ -1,0 +1,35 @@
+# Command executors: console, player | Permission to use /supercookie is supercookies.use
+# Only the command supports the {player-name} placeholder
+# Recipe shape has to be in 3 lines of 3 characters (like in a crafting table)
+# Ingredient presets have to be named as a single character
+# Available item materials: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+# Note: Setting the command executor as console is way SAFER!
+
+# You can add as many cookies as you want :)
+# Made by XiaoJibaZhanshi for SizeSMP
+
+super-cookies:
+  SpinCookie:
+    recipe:
+      shape:
+        - "ABA"
+        - "BCB"
+        - "ABA"
+      ingredients:
+        A: "WHEAT:32"
+        B: "SUGAR:16"
+        C: "EGG:16"
+    result:
+      item: COOKIE
+      amount: 1
+      name: "&bSpinCookie"
+      lore:
+        - "&aOh, look, a &bSpinCookie&a!"
+        - ""
+        - "&7Right click to use it!"
+    on-use:
+      level-requirement: 50
+      command:
+        executor: console
+        command-line: "spin {player-name}"
+
